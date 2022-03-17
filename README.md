@@ -17,3 +17,12 @@ Conversion (WIP):
 >>> jyutping.get('广东话')
 ['gwong2', 'dung1', 'waa6']
 ```
+
+Validation (WIP):
+
+```python
+>>> from jyutping import validate, ValidationStatus
+>>> assert validate('jyut6') == ValidationStatus.VALID
+>>> assert validate('gwek6') == ValidationStatus.UNCOMMON
+>>> assert validate('nguk1') == ValidationStatus.INVALID
+```
