@@ -130,5 +130,8 @@ def validate_args(*args):
             valid('l', 'u', '-'),
             valid('d t n l h z c s j', 'u', 'ng k'),
             error('d t n l h z c s j', 'u', None),
-        ]
+        ],
+        'Other': [
+            alert(None, None, 'p t k', '4 5'),
+        ],
     })
